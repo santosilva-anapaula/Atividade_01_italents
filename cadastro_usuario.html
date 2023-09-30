@@ -4,94 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">    
+    <link rel="stylesheet" href="css/style-padrao.css">
     <title>Cadastro Usuário</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-list"></i></li>
-
-                <li><i class="bi bi-geo-alt"></i></li>
-
-                <li>
-                    <p>São Paulo, SP</p>
-                </li>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <a href="login.html"><li><i class="bi bi-person"></i></li></a>
+                
+                <li id="localizacao">
+                    <i class="bi bi-geo-alt"></i>
+                    <p class="nome-localizacao">São Paulo, SP</p>
+                </li>                   
 
                 <li><i class="bi bi-image"></i></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h1>Cadastro Usuário</h1>
+    <section class="cadastro">
+        <h1 class="cadastro-titulo">Cadastro Usuário</h1>
 
-        <form action="">
+        <form class="cadastro-form" action="">
             <div>
-                <label for="">Nome:</label>
-                <input type="text">
+                <label class="cadastro-label" for="usuario-nome">Nome:</label>
+                <input id="usuario-nome" class="cadastro-input" type="text">
 
-                <label for="">Email:</label>
-                <input type="email">
+                <label class="cadastro-label" for="usuario-email">Email:</label>
+                <input id="usuario-email" class="cadastro-input" type="email">
 
-                <label for="">Senha:</label>
-                <input type="password">
+                <label class="cadastro-label" for="usuario-senha">Senha:</label>
+                <input id="usuario-senha" class="cadastro-input" type="password">
 
-                <label for="">Imagem:</label>
-                <input type="text">
+                <label class="cadastro-label" for="usuario-imagem">Imagem:</label>
+                <input id="usuario-imagem" class="cadastro-input" type="text">
 
-                <label for="">Endereço:</label>
-                <input type="text">
+                <label class="cadastro-label" for="usuario-endereco">Endereço:</label>
+                <input id="usuario-endereco" class="cadastro-input" type="text">
 
-                <label for="">Produtos Favoritos:</label>
-                <input type="text">
+                <label class="cadastro-label" for="usuario-favoritos">Produtos Favoritos:</label>
+                <input id="usuario-favoritos" class="cadastro-input" type="text">
 
-                <label for="">Pedidos:</label>
-                <input type="text">
+                <label class="cadastro-label" for="usuario-pedidos">Pedidos:</label>
+                <input id="usuario-pedidos" class="cadastro-input" type="text">
 
-                <label for="">Admin:</label>
-                <input type="radio" name="admin">Sim
-                <input type="radio" name="admin">Não
+                <label class="cadastro-label" for="cadastro-input-radio">Admin:</label>
+                <input id="admin-sim" class="cadastro-input-radio" type="radio" name="admin">Sim
+                <input id="admin-nao" class="cadastro-input-radio" type="radio" name="admin">Não
 
-                <button>Cadastrar</button>
+                <button class="cadastro-botao">Cadastrar</button>
             </div>
         </form>
     </section>
 
-    <footer>
-        <ul>
-            <li>
-                <a href="">
+    <footer id="footer" class="footer">
+        <ul class="footer-card">
+            <a href="home.html">
+                <li class="footer-item">
                     <i class="bi bi-house"></i>
-                    <p>Home</p>
-                </a>
-            </li>
+                    <p class="footer-name-item">Home</p>
+                </li>
+            </a>
 
-            <li>
-                <a href="">
+            <a href="cadastro_usuario.html">
+                <li class="footer-item">
                     <i class="bi bi-person"></i>
-                    <p>Perfil</p>
-                </a>
-            </li>
+                    <p class="footer-name-item">Cadastro Usuario</p>
+                </li>                
+            </a>
 
-            <li>
-                <a href="">
-                    <i class="bi bi-receipt"></i>
-                    <p>Cupons</p>
-                </a>
-            </li>
+            <a href="cadastro_produto.html">
+                <li class="footer-item">
+                    <i class="bi bi-upc-scan"></i></i>
+                    <p class="footer-name-item">Cadastro Produto</p>
+                </li>                    
+            </a>
 
-            <li>
-                <a href="">
+            <a href="carrinho.html">
+                <li class="footer-item">
+                    <i class="bi bi-cart"></i>
+                    <p class="footer-name-item">Carrinho</p>
+                </li>                
+            </a>
+
+            <a href="produto.html">
+                <li class="footer-item">
                     <i class="bi bi-stickies"></i>
-                    <p>Pedidos</p>
-                </a>
-            </li>
+                    <p class="footer-name-item">Produto</p>
+                </li>
+            </a>
         </ul>
     </footer>
-
 </body>
-
 </html>

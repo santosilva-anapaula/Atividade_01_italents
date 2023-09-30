@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style-padrao.css">
     <title>Home</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-list"></i></li>
-
-                <li><i class="bi bi-geo-alt"></i></li>
-
-                <li><p>São Paulo, SP</p></li>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <a href="login.html"><li><i class="bi bi-person"></i></li></a>
+                
+                <li id="localizacao">
+                    <i class="bi bi-geo-alt"></i>
+                    <p class="nome-localizacao">São Paulo, SP</p>
+                </li>                   
 
                 <li><i class="bi bi-image"></i></li>
             </ul>
@@ -24,95 +26,103 @@
     </header>
 
     <main>
-        <span>
-            <h1>Nome da Empresa</h1>
-            <h2>Olá, Seja bem vindo!</h2>
-            <h3>Vamos fazer seu pedido</h3>
-        </span>
-
-        <section>
-            <i class="bi bi-search"></i>
-            <input type="text" placeholder="Digite seu pedido aqui">
+        <section id="mensagens-inicio">
+            <h1 id="nome-empresa">Nome da Empresa</h1>
+            <h2 class="mensagem">Olá, Seja bem vindo!</h2>
+            <h3 class="mensagem">Vamos fazer seu pedido</h3>
         </section>
 
-        <section>
-            <ul>
-                <li><a href="">Categoria 1</a></li>
-                <li><a href="">Categoria 2</a></li>
-                <li><a href="">Categoria 3</a></li>
-                <li><a href="">Categoria 4</a></li>
+        <section id="input">
+            <i class="bi bi-search"></i>
+            <input id="input-text" type="text" placeholder="Digite seu pedido aqui">
+        </section>
+
+        <section id="categorias">
+            <ul id="ul-categoria">
+                <a href="" class="a-categoria"><li class="categoria">Categoria 1</li></a>
+                <a href="" class="a-categoria"><li class="categoria">Categoria 2</li></a>
+                <a href="" class="a-categoria"><li class="categoria">Categoria 3</li></a>
+                <a href="" class="a-categoria"><li class="categoria">Categoria 4</li></a>
             </ul>
         </section>
 
-        <section>
-            <div>
-                <img src="https://cdn.icon-icons.com/icons2/692/PNG/512/seo-social-web-network-internet_106_icon-icons.com_61526.png"
+        <section id="cards-produtos">
+            <div class="card-produto">
+                <img src="img/cocaCola.png"
                     alt="">
-                <h3>Food 1</h3>
+                <h3 class="nome-produto">Food 1</h3>
             </div>
 
-            <div>
-                <img src="https://cdn.icon-icons.com/icons2/692/PNG/512/seo-social-web-network-internet_106_icon-icons.com_61526.png"
+            <div class="card-produto">
+                <img src="https://gifs.eco.br/wp-content/uploads/2023/05/imagens-de-salgados-assados-png-4.png"
                     alt="">
-                <h3>Food 2</h3>
+                <h3 class="nome-produto">Food 2</h3>
             </div>
 
-            <div>
-                <img src="https://cdn.icon-icons.com/icons2/692/PNG/512/seo-social-web-network-internet_106_icon-icons.com_61526.png"
+            <div class="card-produto">
+                <img src="https://www.pngplay.com/wp-content/uploads/2/Chocolate-Cake-Download-Free-PNG.png"
                     alt="">
-                <h3>Food 3</h3>
+                <h3 class="nome-produto">Food 3</h3>
             </div>
 
-            <div>
-                <img src="https://cdn.icon-icons.com/icons2/692/PNG/512/seo-social-web-network-internet_106_icon-icons.com_61526.png"
+            <div class="card-produto">
+                <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c1a8.png"
                     alt="">
-                <h3>Food 4</h3>
-            </div>
-
-            <div>
-                <a href="">Ver mais >></a>
+                <h3 class="nome-produto">Food 4</h3>
             </div>
         </section>
 
-        <section>
-            <p>Avalie nosso app</p>
-            <i class="bi bi-hand-thumbs-up"></i>
-            <i class="bi bi-hand-thumbs-down"></i>
-            <span>Sua avaliação pode gerar cupons</span>
+        <div id="ver-mais">
+            <a href="">Ver mais >></a>
+        </div>
+
+        <section id="avaliacao">
+            <p id="avaliacao-titulo">Avalie nosso app</p>
+            <div>
+                <i class="bi bi-hand-thumbs-up"></i>
+                <i class="bi bi-hand-thumbs-down"></i>
+            </div>            
+            <span id="avaliacao-frase">Sua avaliação pode gerar cupons</span>
         </section>
     </main>
 
-    <footer>
-        <ul>
-            <li>
-                <a href="">
+    <footer id="footer" class="footer">
+        <ul class="footer-card">
+            <a href="home.html">
+                <li class="footer-item">
                     <i class="bi bi-house"></i>
-                    <p>Home</p>
-                </a>
-            </li>
+                    <p class="footer-name-item">Home</p>
+                </li>
+            </a>
 
-            <li>
-                <a href="">
+            <a href="cadastro_usuario.html">
+                <li class="footer-item">
                     <i class="bi bi-person"></i>
-                    <p>Perfil</p>
-                </a>
-            </li>
+                    <p class="footer-name-item">Cadastro Usuario</p>
+                </li>                
+            </a>
 
-            <li>
-                <a href="">
-                    <i class="bi bi-receipt"></i>
-                    <p>Cupons</p>
-                </a>
-            </li>
+            <a href="cadastro_produto.html">
+                <li class="footer-item">
+                    <i class="bi bi-upc-scan"></i></i>
+                    <p class="footer-name-item">Cadastro Produto</p>
+                </li>                    
+            </a>
 
-            <li>
-                <a href="">
+            <a href="carrinho.html">
+                <li class="footer-item">
+                    <i class="bi bi-cart"></i>
+                    <p class="footer-name-item">Carrinho</p>
+                </li>                
+            </a>
+
+            <a href="produto.html">
+                <li class="footer-item">
                     <i class="bi bi-stickies"></i>
-                    <p>Pedidos</p>
-                </a>
-            </li>
+                    <p class="footer-name-item">Produto</p>
+                </li>
+            </a>
         </ul>
     </footer>
 </body>
-
 </html>

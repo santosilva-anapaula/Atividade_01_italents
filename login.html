@@ -5,74 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style-padrao.css">
     <title>Login</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-list"></i></li>
-
-                <li><i class="bi bi-geo-alt"></i></li>
-
-                <li>
-                    <p>São Paulo, SP</p>
-                </li>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <a href="login.html"><li><i class="bi bi-person"></i></li></a>
+                
+                <li id="localizacao">
+                    <i class="bi bi-geo-alt"></i>
+                    <p class="nome-localizacao">São Paulo, SP</p>
+                </li>                   
 
                 <li><i class="bi bi-image"></i></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h1>Nome da Empresa</h1>
-        <img src="https://cdn.icon-icons.com/icons2/692/PNG/512/seo-social-web-network-internet_106_icon-icons.com_61526.png"
+    <section class="container-login">
+        <h1 id="login-nome-empresa">Nome da Empresa</h1>
+        <img id="login-imagem" src="https://cdn.icon-icons.com/icons2/692/PNG/512/seo-social-web-network-internet_106_icon-icons.com_61526.png"
             alt="">
 
-        <div>
-            <label for="login">Login</label>
-            <input type="text" name="login" id="login">
+        <div class="login-usuario">
+            <label class="login-label" for="login">Login</label>
+            <input class="login-input" type="text" name="login" id="login">
 
-            <label for="password">Senha</label>
-            <input type="text" name="password" id="password">
+            <label class="login-label" for="password">Senha</label>
+            <input class="login-input" type="password" name="password" id="password">
 
-            <button>Realizar login</button>
+            <button  class="login-botao">Realizar login</button>
         </div>
     </section>
 
-    <footer>
-        <ul>
-            <li>
-                <a href="">
+    <footer id="footer" class="footer">
+        <ul class="footer-card">
+            <a href="home.html">
+                <li class="footer-item">
                     <i class="bi bi-house"></i>
-                    <p>Home</p>
-                </a>
-            </li>
+                    <p class="footer-name-item">Home</p>
+                </li>
+            </a>
 
-            <li>
-                <a href="">
+            <a href="cadastro_usuario.html">
+                <li class="footer-item">
                     <i class="bi bi-person"></i>
-                    <p>Perfil</p>
-                </a>
-            </li>
+                    <p class="footer-name-item">Cadastro Usuario</p>
+                </li>                
+            </a>
 
-            <li>
-                <a href="">
-                    <i class="bi bi-receipt"></i>
-                    <p>Cupons</p>
-                </a>
-            </li>
+            <a href="cadastro_produto.html">
+                <li class="footer-item">
+                    <i class="bi bi-upc-scan"></i></i>
+                    <p class="footer-name-item">Cadastro Produto</p>
+                </li>                    
+            </a>
 
-            <li>
-                <a href="">
+            <a href="carrinho.html">
+                <li class="footer-item">
+                    <i class="bi bi-cart"></i>
+                    <p class="footer-name-item">Carrinho</p>
+                </li>                
+            </a>
+
+            <a href="produto.html">
+                <li class="footer-item">
                     <i class="bi bi-stickies"></i>
-                    <p>Pedidos</p>
-                </a>
-            </li>
+                    <p class="footer-name-item">Produto</p>
+                </li>
+            </a>
         </ul>
     </footer>
-
 </body>
-
 </html>
