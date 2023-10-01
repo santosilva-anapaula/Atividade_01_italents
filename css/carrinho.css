@@ -1,0 +1,146 @@
+/*Estilização carrinho*/
+
+.carrinho-voltar-titulo{
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#carrinho-titulo{    
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-company);
+}
+
+.bi-carrinho{
+    color: var(--color-company);
+}
+
+/* Estilização itens do carrinho */
+.carrinho{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 2rem;
+}
+
+.carrinho-container-produto{
+    border: solid 0.2rem var(--color-grey);
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    margin: 2rem;
+}
+
+.container-imagem{
+    display: flex;
+    justify-content: center;
+}
+
+.carrinho-produto-imagem{
+    width: 95%;
+}
+
+.container-nome-quantidade{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.carrinho-nome-produto{
+    padding: 1rem;
+    font-size: 1.5em;
+    color: var(--color-grey);
+}
+
+.container-quantidade{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+.bi-dash-square, .bi-plus-square{
+    color: var(--color-company);    
+    text-shadow: 2px 2px 2px black;
+}
+
+.numero-quantidade{
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    padding: 0.2rem;
+}
+
+.container-total-produto{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.valor-produto{
+    margin-top: 2rem;
+    font-size: 1.6rem;
+}
+
+/* Etilização cupom */
+.cupom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    padding: 1rem 3rem;
+}
+
+.cupom-input{
+    width: 70%;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem 0.5rem;
+    font-size: 1.2rem;
+    color: var(--color-grey);
+}
+
+.cupom-botao{
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    color: var(--color-grey);
+    background-color: var(--background-clean);
+    border: solid 0.15rem var(--color-company);
+    border-radius: 0.5rem;
+}
+
+/* Estilização total */
+.total{
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.container-total-delivery{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.container-total, .container-delivery{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-texto{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+.carrinho-pagamento{
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+}

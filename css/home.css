@@ -1,0 +1,225 @@
+/* Estilização seção das mensagens */
+section#mensagens-inicio{
+    padding: 2rem;
+    background-color: var(--background-clean);
+}
+
+#nome-empresa{
+    font-style: bold;
+    font-size: 2.3rem;
+    color: var(--color-company);
+}
+
+.mensagem{
+    color: var(--color-grey);
+    font-size: 1.2rem;
+}
+
+/* Estilização seção input */
+section#input{
+    display: flex;
+    padding-top: 1rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+i.bi-search{
+    position: absolute;
+    color: var(--color-company);
+    padding: 0.5rem 6%;
+    font-size: 2.8rem;
+}
+
+#input-text{
+    width: 90%;
+    margin: auto;
+    font-size: 1.6rem;
+    padding: 1.2rem 0 1.2rem;
+    border: 0.5mm ridge var(--color-company);
+    border-radius: 1rem;
+    text-align: center;
+    color: var(--color-grey);
+}
+
+input:focus{
+    outline: none;
+}
+
+/* Estilização seção categoria */
+#categorias{
+    display: flex;
+    justify-content: center;
+}
+
+#ul-categoria{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;    
+    overflow-y: auto;
+}
+
+.a-categoria{
+    margin: 3rem 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+li.categoria{
+    margin: auto;
+    color: var(--color-grey);
+    border: solid 2px var(--color-company);
+    border-radius: 1.5rem;
+    padding: 1.3rem 2rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+    min-width: max-content;
+    transition: transform 0.6s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.categoria:hover{
+    background-color: var(--color-company);
+    border: solid 3px var(--color-grey);
+    color: var(--color-white);
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px black;
+}
+
+/* Estilização seção produto */
+section#cards-produtos{
+    display: flex;
+}
+
+.card-produto{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px black;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 25%;
+    transition: transform .5s ease;
+}
+
+.card-produto:hover{
+    transform: scale(1.2);
+}
+
+.card-produto img{
+    width: 70%;
+    display: block;
+    margin:auto;
+    justify-content: center;
+}
+
+h3.nome-produto{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 1.2rem;
+    color: var(--color-company);
+    margin-bottom: 1.3rem;
+    margin-top: 0.2rem;
+}
+
+/* Estilização do vermais */
+#ver-mais{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+}
+
+div#ver-mais a{
+    text-decoration: none;
+    color: var(--color-grey);
+}
+
+/* Estilização avaliação */
+section#avaliacao{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 0.2rem outset var(--color-company);
+    outline: 0.2rem solid var(--color-company-light);
+    margin: 2rem auto 10rem;
+    padding: 1rem 0;
+    border-radius: 0.3rem;
+    width: 50%;
+    font: bold 1rem sans-serif;
+}
+
+#avaliacao-titulo{
+    font-size: 2rem;
+    color: var(--color-company);
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 1rem;
+}
+
+section i{
+    color: var(--color-company);
+    padding: 0 1rem;
+    font-size: 3rem;    
+    text-shadow: 2px 2px 2px black;
+}
+
+#avaliacao-frase{
+    margin-top: 1rem;
+    color: var(--color-grey);
+}
+
+@media screen and (max-width: 1024px){
+    /*Estilização produtos*/
+    section#cards-produtos{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card-produto{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    /* Estilização categoria */    
+    #ul-categoria{
+        justify-content: space-between;
+        overflow-y: auto;
+    }
+
+    /*Estilização produtos*/
+    .card-produto{
+        width: 70%;
+    }
+}
+
+@media  screen and (max-width: 480px) {
+    /* Estilização input*/
+
+    i.bi-search{
+        font-size: 1.8rem;
+        padding-left: 0.5rem;
+    }
+
+    #input-text{
+        font-size: 1.5rem;
+        padding: 0.6rem 1rem 0.6rem 2.5rem;
+    }
+
+    /* Estilização categorias */
+    .a-categoria{
+        margin: 1.8rem 0.4rem;
+    }
+
+    li.categoria{
+        padding: 0.8rem 1.3rem;
+        border-radius: 1rem;
+    }
+
+    /* Estilização avaliação */
+    section#avaliacao{
+        width: 90%;
+    }
+}

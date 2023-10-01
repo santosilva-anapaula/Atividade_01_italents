@@ -1,0 +1,49 @@
+/* Estilização login */
+.container-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+    font-size: 1.5rem;
+}
+#login-nome-empresa{
+    padding: 2rem 0;
+    color: var(--color-company);
+}
+
+#login-imagem{
+    width: 100px;
+}
+
+.login-usuario{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.login-label{
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.login-input{
+    display: block;
+    margin: auto;
+    width: 50%;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: 1px solid var(--color-company);
+    border-radius: 0.2rem;
+}
+
+.login-botao{
+    margin: 3rem auto;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    width: 50%;
+}

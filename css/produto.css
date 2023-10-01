@@ -1,0 +1,81 @@
+/* Estilização produto */
+#voltar-favorito{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0.5rem;
+    margin: 0 2rem;
+}
+
+.produtos{
+    margin: 2rem;
+    padding: 0 2rem 10rem 2rem;
+}
+
+#produto-nome{
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--color-company);
+    padding-bottom: 2rem;
+}
+
+.bi-produto{
+    color: var(--color-company);
+}
+
+#produto-imagem{
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.produto-container-quantidade{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+.bi-dash-square, .bi-plus-square{
+    color: var(--color-company);    
+    text-shadow: 2px 2px 2px black;
+}
+
+.produto-numero-quantidade{
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    padding: 0.2rem;
+}
+
+.unitario-total{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.preco{
+    font-size: 1.5rem;    
+}
+
+.preco-nome{
+    padding-top: 2rem;
+}
+
+.preco-valor{
+    padding-top: 1rem;
+}
+
+#produto-carrinho{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#produto-botao{
+    font-size: 1.5rem;
+    padding: 0.5rem 3rem;
+    margin: 2rem;
+}
