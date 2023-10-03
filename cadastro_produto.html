@@ -28,23 +28,23 @@
     <section class="cadastro">
         <h1 class="cadastro-titulo">Cadastro Produto</h1>
 
-        <form class="cadastro-form" action="">
-            <label class="cadastro-label" for="produto-nome">Nome do produto:</label>
-            <input id="produto-nome" class="cadastro-input" type="text">
+        <form id="cadastro-produto" class="cadastro-form" action="">
+            <label class="cadastro-label" for="produto-nome">* Nome do produto:</label>
+            <input id="produto-nome" class="cadastro-input" type="text" required>
 
-            <label class="cadastro-label" for="produto-descricao">Descrição do produto:</label>
-            <input id="produto-descricao" class="cadastro-input" type="text">
+            <label class="cadastro-label" for="produto-descricao">* Descrição do produto:</label>
+            <input id="produto-descricao" class="cadastro-input" type="text" required>
 
-            <label class="cadastro-label" for="produto-categoria">Categoria:</label>
-            <input id="produto-categoria" class="cadastro-input" type="text">
+            <label class="cadastro-label" for="produto-categoria">* Categoria:</label>
+            <input id="produto-categoria" class="cadastro-input" type="text" required>
 
-            <label class="cadastro-label" for="produto-preco">Preço Unitário:</label>
-            <input id="produto-preco" class="cadastro-input" type="text">
+            <label class="cadastro-label" for="produto-preco">* Preço Unitário:</label>
+            <input id="produto-preco" class="cadastro-input" type="text" required>
 
-            <label class="cadastro-label" for="produto-codigo">Código de Barras:</label>
-            <input id="produto-codigo" class="cadastro-input" type="text">
+            <label class="cadastro-label" for="produto-codigo">* Código de Barras:</label>
+            <input id="produto-codigo" class="cadastro-input" type="text" maxlength="43" required>
 
-            <button class="cadastro-botao">Cadastrar</button>
+            <button id="btn-cadastro-produto" class="cadastro-botao">Cadastrar</button>
         </form>
     </section>
 
@@ -86,5 +86,8 @@
             </a>
         </ul>
     </footer>
+
+    <script src="./js/scipt-cadastro-produto.js"></script>
+
 </body>
 </html>

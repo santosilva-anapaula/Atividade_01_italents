@@ -28,16 +28,16 @@
     <section class="cadastro">
         <h1 class="cadastro-titulo">Cadastro Usuário</h1>
 
-        <form class="cadastro-form" action="">
+        <form id="cadastro-usuario" class="cadastro-form" action="">
             <div>
-                <label class="cadastro-label" for="usuario-nome">Nome:</label>
-                <input id="usuario-nome" class="cadastro-input" type="text">
+                <label class="cadastro-label" for="usuario-nome">* Nome:</label>
+                <input id="usuario-nome" class="cadastro-input" type="text" required>
 
-                <label class="cadastro-label" for="usuario-email">Email:</label>
-                <input id="usuario-email" class="cadastro-input" type="email">
+                <label class="cadastro-label" for="usuario-email">* Email:</label>
+                <input id="usuario-email" class="cadastro-input" type="email" required>
 
-                <label class="cadastro-label" for="usuario-senha">Senha:</label>
-                <input id="usuario-senha" class="cadastro-input" type="password">
+                <label class="cadastro-label" for="usuario-senha">* Senha:</label>
+                <input id="usuario-senha" class="cadastro-input" type="password" required>
 
                 <label class="cadastro-label" for="usuario-imagem">Imagem:</label>
                 <input id="usuario-imagem" class="cadastro-input" type="text">
@@ -53,9 +53,11 @@
 
                 <label class="cadastro-label" for="cadastro-input-radio">Admin:</label>
                 <input id="admin-sim" class="cadastro-input-radio" type="radio" name="admin">Sim
-                <input id="admin-nao" class="cadastro-input-radio" type="radio" name="admin">Não
+                <input id="admin-nao" class="cadastro-input-radio" type="radio" name="admin" checked>Não
 
-                <button class="cadastro-botao">Cadastrar</button>
+                <div id="mensagem-cadastro-usuario"></div>
+
+                <button id="cadastro-botao" class="cadastro-botao">Cadastrar</button>
             </div>
         </form>
     </section>
@@ -98,5 +100,8 @@
             </a>
         </ul>
     </footer>
+
+    <script src="./js/script-cadastro-usuario.js"></script>
+
 </body>
 </html>

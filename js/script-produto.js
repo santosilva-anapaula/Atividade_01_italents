@@ -26,6 +26,9 @@ decrementar.addEventListener("click", function(){
     }
 });
 
-console.log(decrementar);
-console.log(incrementar);
-console.log(quantidadeProduto);
+/* Script Adicionar ao carrinho */
+btnCarrinho = document.querySelector("#produto-botao");
+
+btnCarrinho.addEventListener("click", function(){
+    alert("Produto adicionado ao carrinho");
+});

@@ -104,6 +104,10 @@ section#cards-produtos{
     transition: transform .5s ease;
 }
 
+.card-produto.escondido{
+    display: none;
+}
+
 .card-produto:hover{
     transform: scale(1.2);
 }
@@ -161,8 +165,16 @@ section#avaliacao{
 section i{
     color: var(--color-company);
     padding: 0 1rem;
-    font-size: 3rem;    
+    font-size: 2rem;    
     text-shadow: 2px 2px 2px black;
+}
+
+i.green{
+    color: green;
+}
+
+i.red{
+    color:red;
 }
 
 #avaliacao-frase{

@@ -112,6 +112,12 @@
     border-radius: 0.5rem;
 }
 
+#cupons-aplicados{
+    display: flex;
+    margin: 1rem auto;
+    justify-content: center;
+}
+
 /* Estilização total */
 .total{
     margin: auto;

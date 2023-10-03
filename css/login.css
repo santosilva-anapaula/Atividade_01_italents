@@ -16,6 +16,7 @@
 
 #login-imagem{
     width: 100px;
+    margin-bottom: 2rem;
 }
 
 .login-usuario{
@@ -46,4 +47,11 @@
     padding: 1rem 2rem;
     font-size: 1.5rem;
     width: 50%;
+}
+
+/* insersão html da mensagem de login */
+.card-teste{
+    color: green;
+    background-color: var(--color-company-light);
+    padding: 2rem 2rem;
 }
