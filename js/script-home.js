@@ -1,3 +1,5 @@
+
+/* Sript Pesquisa produtos */
 let inputPesquisa = document.querySelector("#input-text");
 let nomeProdutos = document.querySelectorAll(".nome-produto");
 

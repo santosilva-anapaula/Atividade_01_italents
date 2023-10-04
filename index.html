@@ -18,7 +18,12 @@
                 
                 <li id="localizacao">
                     <i class="bi bi-geo-alt"></i>
-                    <p class="nome-localizacao">São Paulo, SP</p>
+                    <div class="container-pesquisa-cep">
+                        <input id="input-cep" type="text" placeholder="Digite seu CEP">
+                        <button id="botao-localizacao" onclick="consultaLocalizacao()">Ok</button>                        
+                    </div>
+
+                    <p class="nome-localizacao"></p>                    
                 </li>                   
 
                 <li><i class="bi bi-image"></i></li>
@@ -89,7 +94,7 @@
 
     <footer id="footer" class="footer">
         <ul class="footer-card">
-            <a href="home.html">
+            <a href="index.html">
                 <li class="footer-item">
                     <i class="bi bi-house"></i>
                     <p class="footer-name-item">Home</p>
@@ -127,5 +132,6 @@
     </footer>
 
     <script src="./js/script-home.js"></script>
+    <script src="./js/script-header.js"></script>
 </body>
 </html>
