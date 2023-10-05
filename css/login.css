@@ -55,3 +55,9 @@
     background-color: var(--color-company-light);
     padding: 2rem 2rem;
 }
+
+@media screen and (max-width: 500px){
+    .login-botao{
+        width: 70%;
+    }
+}

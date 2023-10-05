@@ -182,7 +182,16 @@ i.red{
     color: var(--color-grey);
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px){  
+    /*Estilização categoria*/
+    .a-categoria{
+        margin: 1rem 0.5rem;
+    }
+
+    li.categoria{
+        padding: 1rem 0.8rem;
+    }
+
     /*Estilização produtos*/
     section#cards-produtos{
         flex-wrap: wrap;
