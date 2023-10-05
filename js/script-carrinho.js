@@ -30,7 +30,7 @@ for(let i=0; i < incrementar.length; i++){
 
     decrementar[i].addEventListener("click", function() {
         if (quantidadeProduto[i] <= 1) {
-            alert("Aquantidade de produto não pode ser menor que 1!")
+            alert("A quantidade de produto não pode ser menor que 1!")
         }else{
             quantidadeProduto[i]--;
             textoProduto[i].textContent = quantidadeProduto[i];
